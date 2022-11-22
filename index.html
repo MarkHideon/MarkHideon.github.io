@@ -4,39 +4,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="web.css">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-    <div class="blog">
-        <div class="post">
-    <header>
-        <img src="../assets/img/logo-hibi-rose.png" alt="logo" width="150"> 
-        <p style="font-size:40px;">HiBi</p>
-    </header>
-        </div> 
-    </div> 
-    <!-- <div class="navbar">
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a class="active" href="#home">Home</a>
-        <div class="search-container">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit">submit</button>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                HiBi
+            </div>
+            <ul>
+                <li class="active"><i class="fa-solid fa-house-chimney-user"></i> Home</li>
+                <li><i class="fa-solid fa-shekel-sign"></i> New</li>
+                <li><i class="fa-regular fa-address-card"></i> Contact</li>
+            </ul>
+             <ul>
+                <li><i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/Marky44037645"> Twitter</a></li>
+                <li> <i class="fa-brands fa-facebook" > </i><a target="_blank" href="https://www.facebook.com/nakata.saito/">Facebook</a> </li>
+                <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/doan.ngoc.hieu/"> Instagram</a></li>
+            </ul>
         </div>
-    </div> -->
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <div class="search-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit">Submit</button>
-          </form>
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>
+
+            <h2>PRODUCTS</h2>
+            <div class="list">
+                <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="/assets/img/meme-cheems-1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 1</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">$20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="2">
+                    <div class="img">
+                        <img src="/assets/img/hinh-meme-cheems-chi-tay.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 2</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">$20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="3">
+                    <div class="img">
+                        <img src="/assets/img/fposter,small,wall_texture,product,750x1000.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 3</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">$20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                
+                <div class="item" data-key="4">
+                    <div class="img">
+                        <img src="/assets/img/korone-headpat-korone.gif" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 4</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">$20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="5">
+                    <div class="img">
+                        <img src="/assets/img/4j52aa.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 5</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">$20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(5)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="6">
+                    <div class="img">
+                        <img src="/assets/img/cho-corgi-4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 6</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">$20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(6)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="7">
+                    <div class="img">
+                        <img src="/assets/img/ab3ba8a2da3f6b6d114dec78dc802826.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 7</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">$20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(7)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="8">
+                    <div class="img">
+                        <img src="/assets/img/d52n9v4vo7e71.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 8</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Labore animi voluptatum, odio sed libero ipsa?
+                        </div>
+                        <div class="price">$20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(8)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-      </div>
-    <img src="../assets/img/pro_track6_A6T001_1.jpg" alt="giay" class="responsive">
+        <div class="cart">
+            <div class="name">CART</div>
+            
+            <div class="listCart">
+
+            </div>
+            <button onclick="myFunction()" class="pc">Purchase</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
